@@ -1,0 +1,114 @@
+{
+  "model_name": "RandomForest_Lexical_Classifier",
+  "model_version": "rf-1.0.0",
+  "trained_at": "2026-11-18T11:29:15.978496",
+  "algorithm": "RandomForestClassifier",
+  "n_estimators": 100,
+  "max_depth": 12,
+  "train_samples": 274,
+  "test_samples": 69,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "true_negative": 40,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_positive": 29
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "is_https",
+      "importance": 0.3216
+    },
+    {
+      "feature": "hostname_length",
+      "importance": 0.1488
+    },
+    {
+      "feature": "entropy",
+      "importance": 0.1269
+    },
+    {
+      "feature": "url_length",
+      "importance": 0.0987
+    },
+    {
+      "feature": "count_hyphens",
+      "importance": 0.0641
+    },
+    {
+      "feature": "is_long_hostname",
+      "importance": 0.0591
+    },
+    {
+      "feature": "suspicious_token_count",
+      "importance": 0.0443
+    },
+    {
+      "feature": "count_digits",
+      "importance": 0.0389
+    },
+    {
+      "feature": "num_subdomains",
+      "importance": 0.0356
+    },
+    {
+      "feature": "count_dots",
+      "importance": 0.0207
+    },
+    {
+      "feature": "is_ip_address",
+      "importance": 0.012
+    },
+    {
+      "feature": "path_length",
+      "importance": 0.0109
+    },
+    {
+      "feature": "count_slashes",
+      "importance": 0.0075
+    },
+    {
+      "feature": "path_depth",
+      "importance": 0.0042
+    },
+    {
+      "feature": "is_punycode",
+      "importance": 0.0033
+    },
+    {
+      "feature": "query_length",
+      "importance": 0.0014
+    },
+    {
+      "feature": "count_equal_signs",
+      "importance": 0.001
+    },
+    {
+      "feature": "count_underscores",
+      "importance": 0.0006
+    },
+    {
+      "feature": "has_non_standard_port",
+      "importance": 0.0004
+    },
+    {
+      "feature": "count_question_marks",
+      "importance": 0.0
+    },
+    {
+      "feature": "count_at_signs",
+      "importance": 0.0
+    },
+    {
+      "feature": "count_percent_signs",
+      "importance": 0.0
+    }
+  ],
+  "dataset_notes": "Trained on demonstration sample dataset containing balanced benign and malicious patterns. Lexical analysis only.",
+  "academic_disclaimer": "Academic research disclaimer: Machine learning prediction is not a guarantee of safety. This prototype is for educational and experimental analysis only."
+}

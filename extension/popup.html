@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URLGuard AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="brand">
+        <span class="shield-icon">🛡️</span>
+        <span class="brand-title">URLGuard <span class="cyan">AI</span></span>
+      </div>
+      <span class="version-tag">v1.0</span>
+    </header>
+
+    <div class="tab-target-box">
+      <div class="label">Current Tab URL</div>
+      <div id="current-url" class="url-display">Inspecting active tab...</div>
+    </div>
+
+    <button id="scan-btn" class="btn-scan">
+      <span id="btn-text">⚡ Scan Active Tab</span>
+    </button>
+
+    <div id="result-container" class="result-box hidden">
+      <div class="verdict-banner" id="verdict-banner">
+        <span id="verdict-icon">⚠️</span>
+        <span id="verdict-text">Evaluating...</span>
+      </div>
+
+      <div class="risk-bar-container">
+        <div class="risk-bar-track">
+          <div id="risk-bar-fill" class="risk-bar-fill"></div>
+        </div>
+        <div class="risk-label">
+          <span>Risk Probability</span>
+          <span id="risk-percentage">0%</span>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <div class="details-title">Safety Recommendations</div>
+        <ul id="advice-list" class="advice-list"></ul>
+      </div>
+
+      <div class="highlights-section">
+        <div class="details-title">Key Lexical Signals</div>
+        <ul id="highlights-list" class="highlights-list"></ul>
+      </div>
+    </div>
+
+    <div id="status-message" class="status-box hidden"></div>
+
+    <footer class="popup-footer">
+      <div class="privacy-note">
+        🔒 Zero page contents collected. Evaluates URL syntax only.
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

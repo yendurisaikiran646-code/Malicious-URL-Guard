@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Security Warning — URLGuard AI</title>
+  <link rel="stylesheet" href="warning.css">
+</head>
+<body>
+  <div class="warning-wrapper">
+    <div class="warning-card">
+      <div class="icon-circle">
+        ⚠️
+      </div>
+
+      <h1 class="warning-title">Potentially Malicious Website Detected</h1>
+      <p class="warning-subtitle">
+        URLGuard AI’s Random Forest lexical classifier flagged this destination as exhibiting high-risk patterns.
+      </p>
+
+      <div class="target-domain-box">
+        <div class="domain-label">Destination Address</div>
+        <div id="flagged-url" class="domain-value">Loading destination...</div>
+        <div id="risk-score-pill" class="risk-pill">Risk Probability: High</div>
+      </div>
+
+      <div class="threat-reasons">
+        <div class="section-title">Common Indicators Flagged:</div>
+        <ul>
+          <li>Domain impersonation, brand squatting, or deep subdomain deception.</li>
+          <li>Raw IP address host addressing or unencrypted credential submission forms.</li>
+          <li>High character entropy or algorithmic token structures.</li>
+        </ul>
+      </div>
+
+      <div class="action-buttons">
+        <button id="safety-btn" class="btn-safety">
+          🛡️ Return to Safety (Close / Go Back)
+        </button>
+      </div>
+
+      <div class="bypass-area">
+        <button id="override-btn" class="btn-override">
+          Proceed anyway (Academic Demonstration Override)
+        </button>
+      </div>
+
+      <div class="disclaimer-note">
+        <strong>Academic Prototype Notice:</strong>
+        This detection was produced by a probabilistic machine learning model based strictly on URL string lexical patterns.
+        It is not an absolute security guarantee.
+      </div>
+    </div>
+  </div>
+
+  <script src="warning.js"></script>
+</body>
+</html>
